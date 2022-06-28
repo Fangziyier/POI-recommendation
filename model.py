@@ -229,7 +229,6 @@ def main():
     endure_count = 0
 
     for epoch in range(1, args.epochs + 1):
-
         train(graphrec, device, train_loader, optimizer, epoch, best_rmse, best_mae)
         expected_rmse, mae = test(graphrec, device, test_loader)
         # please add the validation set to tune the hyper-parameters based on your datasets.
