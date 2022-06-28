@@ -3,6 +3,7 @@ import torch.nn as nn
 from torch.nn import init
 import torch.nn.functional as F
 
+
 class Social_Encoder(nn.Module):
 
     def __init__(self, features, embed_dim, social_adj_lists, aggregator, base_model=None, cuda="cpu"):
