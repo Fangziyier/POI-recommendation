@@ -6,6 +6,7 @@ import numpy as np
 import random
 from Attention import Attention
 
+
 class UV_Aggregator(nn.Module):
     """
     item and user aggregator: for aggregating embeddings of neighbors (item/user aggreagator).
