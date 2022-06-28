@@ -278,9 +278,11 @@ def main():
                 sign.clear()
                 Lsign.clear()
                 ndcg = ndcg + ndcg0
+                dcg = 0
+                idcg = 0
                 count_ndcg+=1
             count += 1
-    if count or count_ndcg == 0:
+    if count == 0 or count_ndcg == 0:
         precision = 0
         ndcg = 0
     else:
