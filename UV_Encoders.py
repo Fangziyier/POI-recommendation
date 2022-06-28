@@ -33,3 +33,5 @@ class UV_Encoder(nn.Module):
         combined = torch.cat([self_feats, neigh_feats], dim=1)#连接两个向量
         combined = F.relu(self.linear1(combined))#对应于公式4
         return combined#为最终的用户向量
+
+    
