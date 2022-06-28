@@ -5,6 +5,7 @@ import numpy as np
 import random
 from Attention import Attention
 
+
 class Social_Aggregator(nn.Module):
     """
     Social Aggregator: for aggregating embeddings of social neighbors.
