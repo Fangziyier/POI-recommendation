@@ -41,3 +41,4 @@ class Social_Encoder1(nn.Module):
         combined = F.relu(self.linear1(combined))
 
         return combined
+    
